@@ -62,7 +62,7 @@ fun HomeScreen(
             Spacer(Modifier.height(12.dp))
 
             LazyVerticalGrid(
-                columns = GridCells.Fixed(3), // This creates a 3-column grid
+                columns = GridCells.Fixed(3),
                 modifier = Modifier
                     .fillMaxSize()
                     .padding(5.dp)
@@ -72,7 +72,7 @@ fun HomeScreen(
                     CardWithIcon(
                         icon = painterResource(id = iconRes),
                         text = text,
-                        onClick = { /* Handle click here */ }
+                        onClick = { }
                     )
                 }
             }

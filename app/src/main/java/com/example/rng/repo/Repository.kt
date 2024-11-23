@@ -19,7 +19,6 @@ class UserRepository @Inject constructor(
     suspend fun loginUser(email: String, password: String): User? {
         val user = userDao.loginUser(email, password)
         if (user != null) {
-            // Save the logged-in user's ID to SharedPreferences
             sharedPreferences.edit().putString("current_user_id", user.id.toString()).apply()
         }
         return user

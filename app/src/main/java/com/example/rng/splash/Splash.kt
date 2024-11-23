@@ -30,7 +30,7 @@ import kotlinx.coroutines.delay
 
 @Composable
 fun SplashScreen(navController: NavHostController, roomViewmodel: LoginViewModel, ) {
-    // Control the duration of the splash screen
+
     LaunchedEffect(Unit) {
         val isLoggedIn = roomViewmodel.isUserLoggedIn()
         delay(2000)

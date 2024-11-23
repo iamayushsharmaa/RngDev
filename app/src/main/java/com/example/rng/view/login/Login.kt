@@ -84,7 +84,7 @@ fun LoginScreen(
                     .fillMaxWidth()
                     .height(220.dp),
 
-                contentScale = ContentScale.Crop // Adjust the scale
+                contentScale = ContentScale.Crop
             )
             Text(
                 text = "UiLover",
@@ -127,7 +127,7 @@ fun LoginScreen(
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // Password Input Field
+
             OutlinedTextField(
                 value = password,
                 onValueChange = { password = it },
@@ -164,7 +164,7 @@ fun LoginScreen(
                     color = Color.Gray
                 )
 
-                Spacer(modifier = Modifier.width(12.dp)) // Space between divider and text
+                Spacer(modifier = Modifier.width(12.dp))
 
                 Text(
                     text = "Or Login with",
